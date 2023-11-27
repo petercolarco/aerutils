@@ -1,0 +1,5 @@
+Colarco, May 16, 2007
+The purpose of the code in the "lib" directory is to provide a library
+IDL and GRADS codes/scripts that should be generally available to the
+analysis in aerutils.  The aerutils/lib/idl path should be added to
+the use IDL path
