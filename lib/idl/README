@@ -1,0 +1,20 @@
+Here's what you need to do:
+
+1) First, this requires Arlindo's modified grads (opengrads-1.9.5).  I have the binaries installed on the 916 cluster on syrinx in /home/colarco/bin.  It will run on any linux machine in the cluster.  You can copy the executables to any other linux machine (I won't go into details, figuring if you want to do that then you know what you're doing).  In addition to pointing your path to use these executables (i.e., gradshdf, gradsdods) rather than any others, the following need to be set in your environment:
+  setenv GAUDFT "/home/colarco/lib/grads/grads.gut"
+You can of course copy the executables and grads.gut file wherever you'd like, just make sure your path and environment are happy.
+
+2) This requires two special IDL procedures be placed somewhere in your IDL_PATH.  If you're like me and have a directory of your favorite IDL routines, stick them there.  (Note: I have modified these procedures relative to what originally was passed around.)  These procedures are called:
+  grads.pro
+  ga_base.pro
+and are provided in the tar file below.
+
+3) The procedure ga_getvar.pro is the reader that I have written.  Might as well put this in your IDL_PATH directory as well.
+
+4) The procedure demonstrate_ga_getvar.pro does just that.  It exercises the ga_getvar procedure using gradsdods.  If you don't know what that is, it's cool: the data physically resides on another computer (calculon) that many of you don't have accounts on.  That's okay, because the data is served through gradsdods.  Three examples are given: a) surface fields from our 25-year dust run, b) 3-d fields from the 25-year dust run, and c) some CO fields from a 2 year run.  If you have your own grads-readable control files or actual data files, you could test these by substituting them for the inpfile I have defined.
+
+So, once you've set up grads and installed the IDL procedures, give it a whirl by running demonstrate_ga_getvar.pro.
+
+The reader is not the friendliest thing yet, so please let me know what kind of trouble you run into.  A couple of notes:
+a) The interface creates a temporary file called idl.dat which is the output from a grads command that is subsequently read in IDL.  Ideally this would be deleted once the grads calls are completed, but right now it is not.  You can safely leave it or delete it at your leisure.  However, because every instance of this interface is writing and reading to 'idl.dat' you cannot run multiple IDL analyses simultaneously in the same directory or they will conflict as they overwrite this file.
+b) The call to print out the variables in a file gives a long-name description of the variable, but unfortunately not the units.  I don't know yet how to provide this since I don't how grads could read that information out of the underlying files.  Keep in mind that the model is nominally mks units (i.e., the dust fluxes are kg m-2 s-1); co and co2 are volume mixing ratios; aerosol amounts are mass mixing ratios.
