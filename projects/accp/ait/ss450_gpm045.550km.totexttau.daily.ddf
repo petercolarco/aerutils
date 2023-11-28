@@ -1,0 +1,3 @@
+dset /misc/prc19/colarco/M2R12K/daily/M2R12K.ss450_gpm045.550km.totexttau.day.daily.%y4%m2%d2.nc4
+options template
+tdef time 365 linear 12z1jan2014 1dy

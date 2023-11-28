@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/S2S_ctrlTest/S2S_ctrlTest.geosgcm_gocart2d.monthly.%y4%m2.nc4
+options template
+tdef time 12 linear 12z15jan1851 1mo

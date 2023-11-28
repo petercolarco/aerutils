@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/c90F_pI33p9_volc/tavg3d_carma_p/c90F_pI33p9_volc.tavg3d_carma_p.monthly.%y4%m2.nc4
+options template
+tdef time 120 linear 0z15jan2010 1mo

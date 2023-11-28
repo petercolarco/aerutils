@@ -1,0 +1,82 @@
+; Goal is to make some zonal, monthly plots to compare to OMPS LP ASI
+; figures
+
+; Read in the scaling by phase function
+; This if from ../scatang
+  phaseo = fltarr(91,12)
+  openr, lun, 'phaseo_amplitude.txt', /get
+  readf, lun, phaseo
+  free_lun, lun
+
+; restrict to particular month
+  phaseo = phaseo[*,2]
+
+; Start from monthly pressure level files from Valentina run
+  expid = 'G41prcR2010'
+  filetemplate = expid+'.tavg3d_aer_p.ddf'
+  ga_times, filetemplate, nymd, nhms, template=template
+  filename=strtemplate(template,nymd,nhms)
+  a = where(nymd eq 20140315L)
+  filename = filename[a]
+  nymd = nymd[a]
+  nhms = nhms[a]
+
+; Get the atmosphere profile
+  atmosphere, p, pe, delp, z, ze, delz, t, te, rhoa
+
+; Get a variable
+  nc4readvar, filename, 'so4', su, lon=lon, lat=lat, lev=lev
+  nc4readvar, filename, 'so4v', su2, lon=lon, lat=lat, lev=lev
+;  nc4readvar, filename, ['airdens'], rhoa, lon=lon, lat=lat, lev=lev
+  su = su+su2
+  a = where(su gt 1e14)
+  su[a] = !values.f_nan
+;  su = su*rhoa  ; concentration
+; zonal mean
+  su = mean(su,dimension=1,/nan)
+
+; Scale su by phaseo
+  for iz = 0, n_elements(lev)-1 do begin
+   su[*,iz] = su[*,iz]*phaseo
+  endfor
+
+
+; Interpolate lev to a height
+  iz = interpol(indgen(n_elements(p)),p/100.,lev)
+  zu = interpolate(z/1000.,iz)
+
+; Colors
+  red   = [0, 246,208,166,103,54,2,1]
+  blue  = [0, 239,209,189,169,144,129]
+  green = [0, 247,230,219,207,192,138,80]
+  tvlct, red, green, blue
+  dcolors=indgen(n_elements(red)-1)+1
+  levels = [50,100,200,400,600,800,1000]
+
+
+;   Now make a plot
+    set_plot, 'ps'
+    device, file='so4tv_mr.scaled.month.ps', $
+      xsize=12, ysize=12, xoff=.6, yoff=.5, /color, /helvetica, font_size=10
+    !p.font=0
+
+; Cut off SU poleward of 60
+  a = where(lat lt -60 or lat gt 60)
+  su[a,*] = !values.f_nan
+
+    contour, su*1e12, lat, zu, /cell, $
+     xrange=[-25,85], xstyle=1, $
+     yrange=[0,40], ytitle='Altitude [km]', levels=levels, c_colors=dcolors, $
+     title='Sulfate Mixing Ratio (all sources) [ng kg!E-1!N]', $
+     position=[.1,.25,.95,.9], xticks=11
+    makekey, .1, .12, .85, .05, 0, -.035, align=0, $
+     colors=make_array(n_elements(levels),val=0), $
+     labels=string(levels,format='(i4)')
+    makekey, .1, .12, .85, .05, 0, -.035, $
+     colors=dcolors, labels=make_array(n_elements(levels),val=' ')
+
+    device, /close
+
+
+end
+

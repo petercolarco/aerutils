@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/CCMI/ref_c2_h53/biomass/ref_c2_h53.bioburn_OC.ann.%y4.nc
+options template
+tdef time 141 linear 12z15jan1960 1yr

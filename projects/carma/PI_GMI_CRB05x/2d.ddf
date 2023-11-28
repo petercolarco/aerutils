@@ -1,0 +1,3 @@
+dset PI_GMI_CRB05x.tavg24_2d_carma_Nx.monthly.%y4%m2.nc4
+options template
+tdef time 12 linear 12z15jan2084 1mo

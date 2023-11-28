@@ -1,0 +1,3 @@
+dset /output/colarco/MODIS/Level3/MOD04/c/GRITAS/Y%y4/M%m2/MOD04_L2_ocn.aero_005.qafl.%y4%m2.hdf
+options template
+tdef time 7 linear 12z15jul2000 1yr

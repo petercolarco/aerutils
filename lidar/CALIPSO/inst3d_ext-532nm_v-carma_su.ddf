@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/c48R_G40b11_carma/inst3d_ext_v/c48R_G40b11_carma.inst3d_ext-532nm_v.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 10000 linear 0z14jul2009 3hr

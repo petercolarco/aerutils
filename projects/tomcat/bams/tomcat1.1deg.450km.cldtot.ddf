@@ -1,0 +1,4 @@
+dset /misc/prc19/colarco/M2R12K/hourly/M2R12K.tomcat1.nodrag.450km.cloud.hourly.%y4%m2%d2.1deg.nc4
+options template
+tdef time 8760 linear 0z1jan2014 1hr
+

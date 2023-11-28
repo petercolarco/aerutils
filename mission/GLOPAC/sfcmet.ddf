@@ -1,0 +1,3 @@
+dset http://opendap.gsfc.nasa.gov:9090/dods/GEOS-5/fp/0.5_deg/fcast/tavg2d_met_x.latest
+xdef lon 1152 linear -180 0.3125
+tdef time 41 linear 10z28APR2010 1hr

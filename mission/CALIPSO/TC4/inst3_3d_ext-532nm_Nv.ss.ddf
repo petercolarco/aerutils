@@ -1,0 +1,3 @@
+dset /misc/prc10/epnowott/d_rep_18/inst3d_aer_v/Y2007/M%m2/d_rep_18.inst3d_ext-532nm_v.%y4%m2%d2_%h200z.nc4.ss
+options template
+tdef time 10000 linear 03z11jul2007 6hr

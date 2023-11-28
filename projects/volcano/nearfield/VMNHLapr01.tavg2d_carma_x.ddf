@@ -1,0 +1,3 @@
+dset /misc/prc20/colarco/volcano/GEOS5/VMNHLapr01//tavg2d_carma_x/Y2015/VMNHLapr01.tavg2d_carma_x.%y4%m2%d2_%h230z.nc4
+options template
+tdef time 360 linear 01:30z15apr2015 3hr

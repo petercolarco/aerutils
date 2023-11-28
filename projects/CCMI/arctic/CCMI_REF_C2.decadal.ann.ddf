@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/CCMI/CCMI_REF_C2/strat_trop/CCMI_REF_C2.strat_trop.decadal.%y4.nc4
+options template
+tdef time 14 linear 12z15jan1965 10yr

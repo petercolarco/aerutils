@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/CCMI/ref_c2_h53/geosgcm_flux/ref_c2_h53.geosgcm_flux.ann.%y4.nc4
+options template
+tdef time 141 linear 12z15jun1960 1yr

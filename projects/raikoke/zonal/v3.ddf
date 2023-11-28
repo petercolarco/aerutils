@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/c180R_pI33p9s12_volc/tavg3d_aerdiag_v/c180R_pI33p9s12_volc.tavg3d_aerdiag_v.monthly.%y4%m2.nc4
+options template
+tdef time 15 linear 12z15nov2018 1mo

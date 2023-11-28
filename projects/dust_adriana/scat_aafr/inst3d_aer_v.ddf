@@ -1,0 +1,3 @@
+dset /misc/prc20/arochali/GEOS5_multi_dust_part_II/2011_a2_apport_frland_7/inst3d_aer_v/daily/2011_a2_apport_frland_7.inst3d_aer_v.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 5000 linear 0z1jun2011 3hr

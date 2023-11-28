@@ -1,0 +1,5 @@
+dset /misc/prc18/colarco/c48R_H54p3-acma/inst2d_hwl_x//Y2008/M02/c48R_H54p3-acma.inst2d_hwl_x.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 696 linear 0z01feb2008 1hr
+xdef lon 144 linear -180 2.5
+ydef lat 91  linear -90  2.

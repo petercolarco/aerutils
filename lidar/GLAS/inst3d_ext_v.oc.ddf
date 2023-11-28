@@ -1,0 +1,3 @@
+dset /misc/prc15/colarco/dR_Fortuna-M-1-1/inst3d_ext-532nm_v/Y%y4/M%m2/dR_Fortuna-M-1-1.inst3d_ext-532nm_v.%y4%m2%d2_%h200z.nc4.oc
+options template
+tdef time 10000 linear 0z1oct2003 3hr

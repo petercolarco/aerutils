@@ -1,0 +1,4 @@
+DSET /misc/prc14/colarco/c48F_H43_pinatubo15+sulfate/geosgcm_surf/c48F_H43_pinatubo15+sulfate.geosgcm_surf.monthly.%y4%m2.nc4
+TITLE c48Fc_H43_pinatubo15+sulfate
+OPTIONS template
+TDEF time 36 LINEAR 00:00Z01JAN1991 1mo

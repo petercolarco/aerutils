@@ -1,0 +1,3 @@
+dset /misc/prc20/colarco/scv7/geosgcm_surf/scv7.geosgcm_surf.%y4%m2%d2_1200z.nc4
+options template
+tdef time 91 linear 12z1sep1990 24hr

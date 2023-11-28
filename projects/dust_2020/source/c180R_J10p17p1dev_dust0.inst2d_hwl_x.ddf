@@ -1,0 +1,4 @@
+dset /misc/prc18/colarco/c180R_J10p17p1dev_dust0/inst2d_hwl_x/c180R_J10p17p1dev_dust0.inst2d_hwl_x.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 312 linear 0z18jun2020 1hr
+

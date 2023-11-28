@@ -1,0 +1,4 @@
+DSET /misc/prc14/colarco/c48F_G41-pin/tavg3d_aer_p/c48F_G41-pin.tavg3d_aer_p.monthly.%y4%m2.nc4
+TITLE c48F_G41-pin
+OPTIONS template
+TDEF time 72 LINEAR 12Z15JAN1996 1mo

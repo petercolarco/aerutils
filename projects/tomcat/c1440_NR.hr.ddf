@@ -1,0 +1,3 @@
+dset /misc/prc19/colarco/c1440_NR_0.5000/full/c1440_NR.inst01hr_2d_aer1_Cx.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 10000 linear 0z31dec2005 1hr

@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/c90F_pI32_fires/tavg2d_aer_x/c90F_pI32_fires.tavg2d_aer_x.%y4%m2%d2_0900z.nc4
+options template
+tdef time 100 linear 09z12aug2017 24hr

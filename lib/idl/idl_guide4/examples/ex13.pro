@@ -1,0 +1,13 @@
+PRO ex13
+d=NCREAD('gdata.nc')
+zonalu=TOTAL(d.u,1)/N_ELEMENTS(d.lon)
+PSOPEN, SPACE2=800
+LEVS, MIN=-32, MAX=32, STEP=4
+CS, SCALE=1
+GSET, XMIN=-90, XMAX=90, YMIN=1000, YMAX=0
+CON, FIELD=zonalu, X=d.lat, Y=d.p, TITLE='Jan 1987 - Zonal Mean Zonal Wind', $
+     NEGATIVE_STYLE=2, ZERO_THICK=200,CB_TITLE='ms!E-1!N'
+AXES, XSTEP=30, XTITLE='Latitude', YSTEP=-250, YTITLE='Pressure (mb)'
+PSCLOSE
+END
+

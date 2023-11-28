@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/c48F_G41-pinc/tavg3d_carma_v/c48F_G41-pinc.tavg3d_carma_v.monthly.%y4%m2.nc4
+options template
+tdef time 132 linear 15jan1991 1mo

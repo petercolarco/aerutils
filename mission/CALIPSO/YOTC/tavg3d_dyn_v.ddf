@@ -1,0 +1,3 @@
+dset /misc/prc10/colarco/arctas/d5_arctas_02/ARCTAS_REPLAY/diag/Y%y4/M%m2/d5_arctas_02.tavg3d_dyn_v.%y4%m2%d2_%h200z.hdf
+options template
+tdef time 10000 linear 0z31mar2008 6hr

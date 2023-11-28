@@ -1,0 +1,3 @@
+dset GEOS.fp.fcst.inst1_2d_hwl_Nx.20190803_12+20190804_%h200.V01.nc4
+options template
+tdef time 2 linear 0z4aug2019 1hr

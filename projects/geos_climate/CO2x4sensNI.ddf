@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/CO2x4sensNI/geosgcm_gocart2d/CO2x4sensNI.geosgcm_gocart2d.%y4%m201_0000z.nc4
+options template
+tdef time 360 linear 12z15jan1995 1mo

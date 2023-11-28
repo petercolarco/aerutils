@@ -1,0 +1,3 @@
+dset e572_fp.inst3_3d_aer_Nv.20110705_1500z.nc4
+options template
+tdef time 10000 linear 0z5jul2011 3hr

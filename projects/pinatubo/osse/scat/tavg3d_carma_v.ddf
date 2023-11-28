@@ -1,0 +1,3 @@
+dset c90Fc_H54p3_pin.tavg3d_carma_v.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 10 linear 0z1jul2007 3hr

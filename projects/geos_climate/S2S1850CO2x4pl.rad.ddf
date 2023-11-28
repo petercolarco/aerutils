@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/S2S1850CO2x4pl/geosgcm_rad/S2S1850CO2x4pl.geosgcm_rad.%y4%m201_0000z.nc4
+options template
+tdef time 1680 linear 12z15jan1850 1mo

@@ -1,0 +1,3 @@
+dset /misc/prc15/colarco/dR_MERRA-AA-r2/geosgcm_surf/Y%y4/M%m2/dR_MERRA-AA-r2.geosgcm_surf.%y4%m2%d2_%h230z.nc4
+options template
+tdef time 10000 linear 01:30z14jul2009 3hr

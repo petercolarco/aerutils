@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/c360R_v10p22p2_aura/OMAERUV/c360R_v10p22p2_aura.OMI-Aura_L2-OMAERUV_2016m09%d2.grid.nc4
+options template
+tdef time 30 linear 12z1sep2016 1dy

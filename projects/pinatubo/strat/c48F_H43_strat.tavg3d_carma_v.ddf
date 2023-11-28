@@ -1,0 +1,4 @@
+dset /misc/prc14/colarco/c48F_H43_strat/tavg3d_carma_v/c48F_H43_strat.tavg3d_carma_v.monthly.%y4%m2.nc4
+options template
+tdef time 36 linear 15jan1991 1mo
+

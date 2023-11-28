@@ -1,0 +1,4 @@
+dset /misc/prc19/colarco/c1440_NR_0.5000/tomcat/iss4.nodrag/c1440_NR.iss4.nodrag.450km.cldtot.%y4%m2%d2_%h200z.nc
+options template
+tdef time 2208 linear 0z1jun2006 1hr
+

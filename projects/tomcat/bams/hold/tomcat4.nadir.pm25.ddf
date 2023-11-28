@@ -1,0 +1,4 @@
+dset /misc/prc19/colarco/M2R12K/hourly/M2R12K.tomcat4.nodrag.nadir.pm25.hourly.%y4%m2%d2.nc4
+options template
+tdef time 2208 linear 0z1jun2014 1hr
+

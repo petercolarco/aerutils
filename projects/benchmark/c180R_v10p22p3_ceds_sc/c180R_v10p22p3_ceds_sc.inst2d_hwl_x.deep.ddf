@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/c180R_v10p22p3_ceds_sc/inst2d_hwl_x/Y%y4/c180R_v10p22p3_ceds_sc.inst2d_hwl_x.MYD04.deep.monthly.%y4%m2.nc4
+options template
+tdef time 144 linear 12z15jan2016 1mo

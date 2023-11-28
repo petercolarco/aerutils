@@ -1,0 +1,4 @@
+DSET /misc/prc18/colarco/c90Fc_H54p3_ctrl/tavg2d_carma_x/c90Fc_H54p3_ctrl.tavg2d_carma_x.monthly.%y4%m2.nc4
+TITLE c90Fc_H54p3_ctrl
+OPTIONS template
+TDEF time 36 LINEAR 00:00Z01JAN1991 1mo

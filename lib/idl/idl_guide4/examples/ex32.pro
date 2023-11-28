@@ -1,0 +1,12 @@
+PRO ex32
+PSOPEN, THICK=200, CHARSIZE=150
+CS, SCALE=7
+xpts=FINDGEN(41)/10
+ypts=xpts*2+RANDOMN(0.0, 41)
+GSET, XMIN=0, XMAX=4, YMIN=0, YMAX=10
+GPLOT, X=xpts, Y=ypts, SYM=2, /NOLINES
+coefficients=LINFIT(xpts, ypts, yfit=yfit)
+GPLOT, X=xpts, Y=yfit
+AXES, STEP=1
+PSCLOSE
+END

@@ -1,0 +1,3 @@
+dset /misc/prc20/colarco/volcano/GEOS5/VMTROjan02//tavg3d_carma_p/Y2015/VMTROjan02.tavg3d_carma_p.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 60 linear 09z15jan2015 24hr

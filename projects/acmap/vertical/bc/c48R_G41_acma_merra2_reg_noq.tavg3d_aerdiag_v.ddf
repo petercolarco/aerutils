@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/c48R_G41_acma_merra2_reg_noq/tavg3d_aerdiag_v/c48R_G41_acma_merra2_reg_noq.tavg3d_aerdiag_v.monthly.%y4%m2.nc4
+options template
+tdef time 12 linear 15jan2007 1mo

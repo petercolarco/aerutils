@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/c180R_v10p21p1_aura_t6p0_phil_bb2/OMAERUV/c180R_v10p21p1_aura_t6p0_phil_bb2.OMI-Aura_L2-OMAERUV_2016m09%d2.grid.nc4
+options template
+tdef time 30 linear 12z1sep2016 1dy

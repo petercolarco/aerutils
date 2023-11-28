@@ -1,0 +1,4 @@
+DSET /misc/prc18/colarco/c48Fc_H43_stratv2/tavg3d_aer_v/c48Fc_H43_stratv2.tavg3d_aer_v.monthly.%y4%m2.nc4
+TITLE c48Fc_H43_stratv2
+OPTIONS template
+TDEF time 36 LINEAR 00:00Z01JAN1991 1mo

@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/c180R_v202_lasouf/inst2d_hwl_x/c180R_v202_lasouf.inst2d_hwl_x.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 720 linear 0z1apr2021 1hr

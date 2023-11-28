@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/S2S_clim1850/geosgcm_surf/S2S_clim1850.geosgcm_surf.%y4%m201_0000z.nc4
+options template
+tdef time 840 linear 12z15jan1850 1mo

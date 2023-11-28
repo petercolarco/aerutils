@@ -1,0 +1,3 @@
+dset /misc/prc13/MERRA2/inst3d_ext-532nm_v/MERRA2_400.inst3d_ext-532nm_v.%y4%m2%d2.nc4
+options template
+tdef time 72 linear 0z28jul2016 3hr

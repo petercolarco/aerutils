@@ -1,0 +1,3 @@
+dset /misc/prc13/c1440_NR/c1440_NR.inst30mn_2d_met1_Nx.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 10000 linear 0z31dec2005 1hr

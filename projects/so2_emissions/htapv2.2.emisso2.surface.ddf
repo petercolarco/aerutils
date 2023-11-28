@@ -1,0 +1,6 @@
+dset tmp/htapv2.2.emisso2.surface.x3600y1800t12.%y4.integrate.nc4
+options template
+undef 1.e15
+xdef lon 3600 linear -179.95 0.1
+ydef lat 1800 linear -89.95  0.1
+tdef time 36  linear 12z15jan2021 732hr

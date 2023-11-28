@@ -1,0 +1,3 @@
+dset /misc/prc19/colarco/c1440_NR_0.5000/day/sunsynch_450km_1330crossing.nodrag/c1440_NR.sunsynch_450km_1330crossing.nodrag.300km.day.cloud.daily.%y4%m2%d2.nc
+options template
+tdef time 365 linear 12z1jan2006 24hr

@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/b_F25b9-base-v1/tavg2d_carma_x/b_F25b9-base-v1.tavg2d_carma_x.obs.RaggedPoint.%y4.nc4
+options template
+tdef time 480 linear 12z15jan2011 1mo

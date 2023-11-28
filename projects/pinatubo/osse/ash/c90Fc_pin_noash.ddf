@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/c90Fc_I10pa3_pin_noash/tavg2d_carma_x/c90Fc_I10pa3_pin_noash.tavg2d_carma_x.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 16 linear 09z15jun1991 24hr

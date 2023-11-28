@@ -1,0 +1,3 @@
+dset /misc/prc20/arochali/GEOS5_Apport_Study/du_src_D_c180R_H43/inst2d_hwl_x/daily/du_src_D_c180R_H43.inst2d_hwl_x.%y4%m2%d2_1200z.nc4
+options template
+tdef time 30 linear 12z1jun2007 24hr

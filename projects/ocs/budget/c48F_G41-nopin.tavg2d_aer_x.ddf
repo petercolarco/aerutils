@@ -1,0 +1,4 @@
+dset /misc/prc14/colarco/c48F_G41-nopin/tavg2d_aer_x/c48F_G41-nopin.tavg2d_aer_x.monthly.%y4%m2.nc4
+options template
+tdef time 204 linear 15jan1985 1mo
+

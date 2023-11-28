@@ -1,0 +1,4 @@
+DSET /misc/prc18/colarco/c48Fc_H43_pin15v2+sulf_2/tavg2d_aer_x/c48Fc_H43_pin15v2+sulf_2.tavg2d_aer_x.monthly.%y4%m2.nc4
+TITLE c48Fc_H43_pinatubo15+sulf_2ate
+OPTIONS template
+TDEF time 36 LINEAR 00:00Z01JAN1991 1mo

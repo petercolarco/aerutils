@@ -1,0 +1,4 @@
+DSET /misc/prc14/colarco/c48F_G41-spin/tavg3d_carma_v/c48F_G41-spin.tavg3d_carma_v.monthly.clim.M%m2.nc4
+TITLE c48F_G41-spin
+OPTIONS template
+TDEF time 12 LINEAR 12Z15JAN1995 1mo

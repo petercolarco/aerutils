@@ -1,0 +1,4 @@
+dset /misc/prc10/colarco/GLOPAC/e540_fp/das/Y%y4/M%m2/D%d2/glopac.inst3_3d_chm_Nv.%y4%m2%d2_%h200z.nc4
+options template
+xdef lon 1152 linear -180 0.3125
+tdef time 24 linear 0z23APR2010 3hr

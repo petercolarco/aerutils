@@ -1,0 +1,4 @@
+DSET /misc/prc14/colarco/c48F_G41-nopin/geosgcm_prog/c48F_G41-nopin.geosgcm_prog.monthly.%y4%m2.nc4
+TITLE c48F_G41-nopin
+OPTIONS template
+TDEF time 204 LINEAR 12Z15JAN1985 1mo

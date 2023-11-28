@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/aura/dR_MERRA-AA-r2-v1621f/v7_5/dR_MERRA-AA-r2-v1621.ai.%y4%m2%d2.nc4
+options template
+tdef time 92 linear 1jun2007 1dy

@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/dR_F25b18/aerosol_index/v15_3/dR_F25b18.ai.%y4%m2%d2.nc4
+options template
+tdef time 1200 linear 12z1jan2007 1dy

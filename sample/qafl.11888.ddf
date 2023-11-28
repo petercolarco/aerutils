@@ -1,0 +1,3 @@
+dset /science/modis/data/Level3/MYD04/hourly/d/GRITAS//Y2016/M08/MYD04_L2_ocn.aero_tc8_006.qast.%y4%m2%d2.nc4
+options template
+tdef time 24 linear 0z18aug2016 1hr

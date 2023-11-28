@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/c48Fc_H43_stratv2/geosgcm_surf/c48Fc_H43_stratv2.geosgcm_surf.%y4%m2%d2_%h230z.nc4
+options template
+tdef time 728 linear 1z1sep1991 24hr

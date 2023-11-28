@@ -1,0 +1,4 @@
+dset /output/colarco/t006_b32/tau//Y2006/M12/t006_b32.tau2d.%y4%m2%d2.hdf
+options template
+undef 1e+15
+tdef time 124 linear 0Z01dec2006 6hr

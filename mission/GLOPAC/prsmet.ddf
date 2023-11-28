@@ -1,0 +1,4 @@
+dset http://opendap.gsfc.nasa.gov:9090/dods/GEOS-5/fp/0.5_deg/fcast/inst3d_met_p.latest
+xdef lon 540 linear -180 0.6666667
+ydef lat 361 linear -90  0.5
+tdef time 41 linear 12z28APR2010 3hr

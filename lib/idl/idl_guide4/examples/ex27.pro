@@ -1,0 +1,14 @@
+PRO ex27
+d=NCREAD('maunaloa.nc')
+PSOPEN, THICK=200, CHARSIZE=150
+CS, SCALE=1
+GSET, XMIN=1958, XMAX=2010, YMIN=310, YMAX=390, $
+      TITLE='Atmospheric CO!I2!N at Mauna Loa Observatory'
+GPLOT, X=d.time(0:186), Y=d.co2(0:186), COL=3
+GPLOT, X=d.time(186:N_ELEMENTS(d.time)-1), Y=d.co2(186:N_ELEMENTS(d.time)-1), COL=18
+LEGEND, COL=[3, 18], LABELS=['SIO', 'CDIAC'], LEGPOS=1
+AXES, XVALS=INDGEN(6)*10+1960, XTITLE='Year', YSTEP=10, YTITLE='Concentration (ppm)'
+PSCLOSE
+END
+
+

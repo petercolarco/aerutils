@@ -1,0 +1,3 @@
+dset /misc/prc13/MERRA2/inst3_3d_asm_Nv/MERRA2_400.inst3_3d_asm_Nv.201510%d2.nc4
+options template
+tdef time 88 linear 0z20oct2015 3hr

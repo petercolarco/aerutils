@@ -1,0 +1,4 @@
+dset FILE
+xdef lon 2880 linear -180 0.125
+ydef lat 1441 linear -90  0.125
+tdef time 24 linear 0z5jun1971 1hr

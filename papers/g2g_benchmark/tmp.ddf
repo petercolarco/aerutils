@@ -1,0 +1,4 @@
+dset omps_lp_daily_zonal.nc
+tdef time 1460 linear 12z1jan2016 1dy
+xdef longitude 1 linear 180 1
+ydef latitude 121 linear -90 1.5

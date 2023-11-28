@@ -1,0 +1,4 @@
+dset /misc/prc19/colarco/c1440_NR_0.5000/tomcat/full/c1440_NR.full.pblh.%y4%m2%d2_%h200z.nc
+options template
+tdef time 2208 linear 0z1jun2006 1hr
+

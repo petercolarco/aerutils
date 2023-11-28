@@ -1,0 +1,4 @@
+dset http://opendap.nccs.nasa.gov:9090/dods/GEOS-5/glopac/fcast/inst3_3d_asm_Cp.latest
+xdef lon 540 linear -180 0.6666667
+ydef lat 361 linear -90  0.5
+tdef time 41 linear 12z28APR2010 3hr

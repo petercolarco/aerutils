@@ -1,0 +1,3 @@
+dset /misc/prc18/colarco/S2S1850nrst/geosgcm_gocart3d/S2S1850nrst.geosgcm_gocart3d.%y4%m201_0000z.nc4
+options template
+tdef time 132 linear 12z15jan1940 1mo

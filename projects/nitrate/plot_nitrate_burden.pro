@@ -1,0 +1,47 @@
+  expid = ['c180R_J10p17p1dev_aura','c180R_J10p14p1_aura', 'c90F_J10p14p1_nosc', $
+           'c90R_J10p14p1', $
+           'c90R_du_Jasper_run1', 'c90F_J10p14p1', $
+           'bench_i329_gmi_free_c180', $
+           'bench_10-14-1_gmi_free_c180_72lev','I33c90hs12', 'Icarusr6r6']
+
+; green = CCM bencmarks (free-running/coupled HNO3)
+; solid = Jason
+; dashed = Icarus
+; blue  = free-running/archived HNO3
+; red   = replay/archived HNO3
+
+  expip = [ 16,  16,  11,  11,   4, 11,   2,   4,  0,   0]
+  lin   = [  2,   0,   0,   0,   2,  0,   2,   0,  2,   2]
+  col   = [254, 254,  84, 254, 254, 84, 176, 176, 84, 254]
+
+  set_plot, 'ps'
+  device, file='plot_nitrate_burden.ps', $
+   /color, /helvetica, font_size=12, $
+   xsize=24, ysize=12, xoff=.5, yoff=.5
+  !p.font=0
+
+  x = 2000.+findgen(241)/12.
+
+  plot, x, indgen(241), /nodata, xticks=20, $
+   xtickn=string([x[0:240:12]],format='(i4)'), $
+   yrange=[0,2.5], xrange=[2000,2020]
+
+  loadct, 39
+
+  for iexpid = 0, n_elements(expid)-1 do begin
+   if (iexpid ge 2 and iexpid le 5) then continue
+print, expid[iexpid]
+   filetemplate = expid[iexpid]+'.tavg2d_aer_x.ctl'
+   ga_times, filetemplate, nymd, nhms, template=template
+   filename=strtemplate(template,nymd,nhms)
+   nc4readvar, filename, 'nicmass', nicmass, lon=lon, lat=lat, time=time
+   area, lon, lat, nx, ny, dx, dy, area
+   nim = aave(nicmass,area)*total(area)/1.e9
+   x = 2000+expip[iexpid]+findgen(n_elements(time))/12.
+   oplot, x, nim, lin=lin[iexpid], color=col[iexpid], thick=6
+
+  endfor
+
+  device, /close
+
+end

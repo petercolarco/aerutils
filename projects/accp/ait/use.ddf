@@ -1,0 +1,4 @@
+dset pm25.nadir065.201412.nc
+xdef lon 360 linear -180 1
+ydef lat 181 linear -90  1
+tdef time 24 linear 0z5jun1971 1hr

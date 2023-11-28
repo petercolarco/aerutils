@@ -1,0 +1,4 @@
+dset /misc/prc13/dao_ops/e5110_fp/das/Y%y4/M%m2/D%d2/GEOS.fp.asm.inst3_3d_ext-532nm_Nv.%y4%m2%d2_%h200z.nc4.dust
+options template
+tdef time 1000 linear 0z20aug2013 3hr
+

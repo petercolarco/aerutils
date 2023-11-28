@@ -1,0 +1,4 @@
+DSET /misc/prc14/colarco/c48F_H43_pinatubo15/tavg2d_carma_x/c48F_H43_pinatubo15.tavg2d_carma_x.monthly.%y4%m2.nc4
+TITLE c48F_H43_pinatubo15
+OPTIONS template
+TDEF time 36 LINEAR 00:00Z01JAN1991 1mo

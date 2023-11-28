@@ -1,0 +1,3 @@
+dset /misc/prc13/MERRA2/tavg1_2d_aer_Nx/Y%y4/M%m2/MERRA2_400.tavg1_2d_aer_Nx.%y4%m2%d2.nc4
+options template
+tdef time 10000 linear 00:30z1jan2015 1hr

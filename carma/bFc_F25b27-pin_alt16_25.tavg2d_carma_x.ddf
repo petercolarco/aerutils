@@ -1,0 +1,4 @@
+dset /misc/prc14/colarco/bFc_F25b27-pin_alt16_25/tavg2d_carma_x/bFc_F25b27-pin_alt16_25.tavg2d_carma_x.monthly.%y4%m2.nc4
+options template
+undef 1.e15
+tdef time 60 linear 12z15jan1991 1mo

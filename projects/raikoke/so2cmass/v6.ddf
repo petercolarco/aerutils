@@ -1,0 +1,3 @@
+dset /misc/prc17/colarco/c180R_pI33p9s12_volcv6/tavg2d_aer_x/c180R_pI33p9s12_volcv6.tavg2d_aer_x.%y4%m2%d2_0900z.nc4
+options template
+tdef time 26 linear 9z21jun2019 1dy

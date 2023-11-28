@@ -1,0 +1,3 @@
+dset forecast.inst3_3d_aer_Nv.%y4%m2%d2.nc
+options template
+tdef time 288 linear 0z1jun2020 3hr

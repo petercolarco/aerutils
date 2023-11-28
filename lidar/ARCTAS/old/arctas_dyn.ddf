@@ -1,0 +1,3 @@
+dset /misc/prc08/arctas/d5_arctas_02/das/Y%y4/M%m2/D%d2/d5_arctas_02.tavg3d_dyn_v.%y4%m2%d2_%h200z.hdf
+options template
+tdef time 120 linear 0z1apr2008 6hr

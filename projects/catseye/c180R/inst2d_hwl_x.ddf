@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/c180R_H53-acma/inst2d_hwl_x/Y2008/M%m2/c180R_H53-acma.inst2d_hwl_x.2008%m2%d2_%h200z.nc4
+options template
+tdef time 3672 linear 0z1jun2008 1hr

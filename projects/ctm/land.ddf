@@ -1,0 +1,3 @@
+dset /science/modis/data/Level3/MYD04/NNR/d/Y%y4/M%m2/nnr_003.MYD04_L3a.land.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 240 linear 0z1apr2018 3hr

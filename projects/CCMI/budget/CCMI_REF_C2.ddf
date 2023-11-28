@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/CCMI/CCMI_REF_C2/CCMI_REF_C2.ccmi_mon2d.eta.mon.%y4%m2.nc4
+options template
+tdef time 2400 linear 12z15jan1960 1mo

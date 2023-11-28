@@ -1,0 +1,4 @@
+dset gao.nc
+xdef lon 288 linear -180 1.25
+ydef lat 181 linear -90 1
+

@@ -1,0 +1,3 @@
+dset /misc/prc14/colarco/c48R_H40_aura/09km/tavg3d_aer_p/c48R_H40_aura.tavg3d_aer_p.%y4%m2%d2_%h200z.nc4
+options template
+tdef time 10 linear 9z01jul2007 24hr

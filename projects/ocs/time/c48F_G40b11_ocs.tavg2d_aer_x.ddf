@@ -1,0 +1,4 @@
+dset /misc/prc14/colarco/c48F_G40b11_ocs/tavg2d_aer_x/c48F_G40b11_ocs.tavg2d_aer_x.monthly.%y4%m2.nc4
+options template
+tdef time 120 linear 15jan1992 1mo
+
