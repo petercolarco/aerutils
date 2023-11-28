@@ -1,0 +1,21 @@
+Put a stop in trend.pro write after plotting the trend.  And then:
+
+cdfid = ncdf_create('trend_stuff.nc4',/clobber)
+    idLon = NCDF_DIMDEF(cdfid,'lon',nx)
+    idLat = NCDF_DIMDEF(cdfid,'lat',ny)
+    idtime = ncdf_dimdef(cdfid,'time',1)
+    idLongitude = NCDF_VARDEF(cdfid,'lon',[idLon], /float)
+    idLatitude  = NCDF_VARDEF(cdfid,'lat',[idLat], /float)
+    idTimes = ncdf_vardef(cdfid,'time',[idtime],/float)
+idslope = ncdf_vardef(cdfid,'slope', [idlon,idlat,idTime], /float)
+idsignif = ncdf_vardef(cdfid,'signif',[idlon,idlat,idTime],/float)
+    ncdf_control, cdfid, /endef
+    ncdf_varput, cdfid, idLongitude, lon
+    ncdf_varput, cdfid, idLatitude, lat
+    ncdf_varput, cdfid, idTimes, 1.
+ncdf_varput,cdfid,idslope,slope*100.
+ncdf_varput,cdfid,idsignif,abs(slope/tstd)
+ncdf_close, cdfid
+
+
+

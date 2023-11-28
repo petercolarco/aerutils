@@ -1,0 +1,4 @@
+dset trend_stuff.nc4
+xdef lon 576 linear -180 0.625
+ydef lat 361 linear -90 0.5
+tdef time 1 linear 12z5jun2003 1dy
