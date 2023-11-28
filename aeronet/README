@@ -1,0 +1,70 @@
+Colarco, July 30, 2008
+The purpose of the code in the "aeronet" directory is to compare model
+output to AERONET data and to analyze AERONET data.
+
+There are a number of things you might want to do:
+1) Create AERONET data
+From the AERONET website you can download the entire dataset as either
+monthly average, daily average, or all-points files.
+- goto http://aeronet.gsfc.nasa.gov
+- on the left under "AERONET DATA ACCESS" see the block
+  "AERONET OPTICAL DEPTH" and click on "Download All Sites"
+- Get the files in the panel in the middle now:
+  AOT_Level2_All_Points.tar.gz
+  AOT_Level2_Daily.tar.gz
+  AOT_Level2_Monthly.tar.gz
+  These files are updated with some frequency as new data becomes available
+- Put these files somewhere and unpackage them (tar -xvzf ...)
+  I put them in, e.g., bender:/misc/prc10/AERONET/AOT
+  When they are unpacked they create a sub-directory AOT under that level
+  with LEV20/DAILY, LEV20/MONTHLY, LEV20/ALL_POINTS levels below which
+  contain the unpacked dataset as a series of text files, one for each site
+- In the aerutils/setup.csh file set the environment variable $AERONETDIR
+  In this example, mine looks like:
+   "setenv AERONETDIR /misc/prc10/AERONET/"
+- Rather than deal with the text files all the time, I wrote code to turn
+  the dataset into NETCDF files containing all data in a single file 
+  (for the DAILY or MONTHLY files) or a series of NETCDF files (1 per site) 
+  for the ALL_POINTS data.  You can do this:
+   idl> .r aeronet_monthly2nc.pro
+   idl> .r aeronet_daily2nc.pro
+   idl> .r aeronet_allpts2nc.pro
+  The output is places in ./output/aeronet2nc
+  Note that only a temporal subset of the data is assembled in these files.
+
+2) Assuming you have already done #1 and have the model sampled at the
+AERONET points you can make a self-consistent monthly mean and histogram
+dataset by running:
+   idl> .r mon_mean.pro
+   idl> .r histogram.pro
+The output generated appears in ./output/mon_mean and ./output/histogram
+Note: As these are setup, the AERONET "hourly" fields are read, which is
+the allpts data as generated (binned into 6-hour time chunks).  So the
+monthly means from these are the model sampled only at 6 hour time chunks
+with valid AERONET measurements and weighted by the number of AERONET
+measurements in that time.
+
+
+3) Assuming you have already done #2 you can make various plots of the
+the monthly mean datasets prepared.
+
+   idl> .r scatter_ann.pro (or scatter_ann.color.pro)
+        For a given year (or series of years) scatter the seasonal average
+        of all sites model vs. AERONET AOT and Angstrom parameter
+
+   idl> .r scatter_mon_mean.pro
+        For a given year scatter the monthly mean of all sites model vs.
+        AERONET for each month.  Actually three sets of plots:
+        o greyscale
+        o color-coded by domonant model aerosol species
+        o color-coded by AERONET Angstrom exponent
+        Plots for all sites included in mon_mean.pro construction.
+
+   idl> .r scatter_mon_mean.multiyear.pro
+        As for scatter_mon_mean.pro but assemble multiple years into a
+        single plot
+
+   idl> .r aeronet_site_monmean.pro
+        For a given experiment, specify the years to assemble, make a
+        series of plots, one for each site, of monthly mean AOT/Angstrom
+        and scatter and PDF statistics plots
