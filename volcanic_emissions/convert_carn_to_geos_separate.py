@@ -65,7 +65,7 @@ for nd,dt in enumerate(rrule.rrule(rrule.DAILY, dtstart=dStart, until=dEnd)):
     #find volcanoes on that day
     indexDay = np.where(dayExStr == dayString)
     if (len(indexDay[0]) > 0):
-        f = open(savepath_explosive+'so2_explosive_volcanic_emissions_Carns.'+dayString+'.rc','w')
+        f = open(savepath_explosive+'so2_explosive_volcanic_emissions_Carn.'+dayString+'.rc','w')
         f.write('###  LAT (-90,90), LON (-180,180), SULFUR [kg S/s], ELEVATION [m], CLOUD_COLUMN_HEIGHT [m]\n')
         f.write('### If elevation=cloud_column_height, emit in layer of elevation\n')
         f.write('### else, emit in top 1/3 of cloud_column_height\n')
@@ -122,7 +122,7 @@ Path(savepath_degassing).mkdir(exist_ok=True)
 for nd,dt in enumerate(rrule.rrule(rrule.DAILY, dtstart=dStart, until=dEnd)):
     dayString = str(dt.year)+str(dt.month).zfill(2)+str(dt.day).zfill(2)
     if ((dt < datetime(2005,1,1) or (dt >= datetime(2020,1,1)))):
-        f = open(savepath_degassing+'so2_degassing_volcanic_emissions_Carns.'+dayString+'.rc','w')
+        f = open(savepath_degassing+'so2_degassing_volcanic_emissions_Carn.'+dayString+'.rc','w')
         f.write('###  LAT (-90,90), LON (-180,180), SULFUR [kg S/s], ELEVATION [m], CLOUD_COLUMN_HEIGHT [m]\n')
         f.write('### If elevation=cloud_column_height, emit in layer of elevation\n')
         f.write('### else, emit in top 1/3 of cloud_column_height\n')
@@ -133,7 +133,7 @@ for nd,dt in enumerate(rrule.rrule(rrule.DAILY, dtstart=dStart, until=dEnd)):
         f.write('::\n')
         f.close()
     else:
-        f = open(savepath_degassing+'so2_degassing_volcanic_emissions_Carns.'+dayString+'.rc','w')
+        f = open(savepath_degassing+'so2_degassing_volcanic_emissions_Carn.'+dayString+'.rc','w')
         f.write('###  LAT (-90,90), LON (-180,180), SULFUR [kg S/s], ELEVATION [m], CLOUD_COLUMN_HEIGHT [m]\n')
         f.write('### If elevation=cloud_column_height, emit in layer of elevation\n')
         f.write('### else, emit in top 1/3 of cloud_column_height\n')

@@ -93,7 +93,7 @@ for nd,dt in enumerate(rrule.rrule(rrule.DAILY, dtstart=dStart, until=dEnd)):
     dayString = str(dt.year)+str(dt.month).zfill(2)+str(dt.day).zfill(2)
     #find volcanoes on that day
     indexDay = np.where(dayExStr == dayString)
-    f = open(savepath+'so2_volcanic_emissions_Carns.'+dayString+'.rc','w')
+    f = open(savepath+'so2_volcanic_emissions_Carn.'+dayString+'.rc','w')
     if ((dt < datetime(2005,1,1) or (dt >= datetime(2020,1,1)))):
         f.write('###  LAT (-90,90), LON (-180,180), SULFUR [kg S/s], ELEVATION [m], CLOUD_COLUMN_HEIGHT [m]\n')
         f.write('### If elevation=cloud_column_height, emit in layer of elevation\n')
